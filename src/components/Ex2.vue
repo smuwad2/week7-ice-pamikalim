@@ -27,8 +27,7 @@
 
     <h2>Shopping Cart</h2>
     <!-- TODO: Add Code Here -->
-     <input v-model="newItem" placeholder="Enter item name">
-    <button @click="addItem">Add!</button>
+     
 
     <ul>
         <li v-for="(item, index) in items" :key="index">
@@ -36,6 +35,8 @@
             <button @click="deleteItem(index)">Delete</button>
         </li>
     </ul>
+    <input v-model="newItem" placeholder="Enter item name">
+    <button @click="addItem">Add!</button>
    
 </template>
 
